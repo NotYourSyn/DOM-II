@@ -7,7 +7,7 @@ head2.forEach((item) =>{
         e.target.style.color = 'red';
     });
     item.addEventListener('mouseleave', (e) =>{
-        e.target.style.color = 'black';
+        e.target.style.color = 'blue';
     });
 });
 
@@ -37,5 +37,22 @@ growImg.forEach((item) =>{
     });
     item.addEventListener('mouseleave', (e) =>{
         e.target.style.transform = 'scale(1)';
-    })
+    });
 });
+
+// scroll event 
+window.addEventListener('scroll', ()=>{
+    document.body.style = 'color:red;background-color:black;'
+   
+});
+
+// keydown 
+document.addEventListener('keydown', (e) =>{
+    if(e.key==='z'){
+        document.body.style = 'color:yellow;background-color:black;'
+    }else if(e.key === 'q'){
+        document.body.style = 'color:orange;background-color:blue;'
+        
+    }
+});
+
